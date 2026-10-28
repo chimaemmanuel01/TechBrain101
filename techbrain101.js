@@ -163,6 +163,8 @@ rl.question("Enter your name: ", function(name) {
                 score++;
                 } else {
                     console.log("Wrong answer!");
+
+                    console.log("The correct answer is: "  + questions[index].answer);
                     }
                     askQuestion(index + 1);
                     });
