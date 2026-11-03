@@ -1,3 +1,6 @@
+//Build a quiz that asks students questions and tells them whether each answer is correct. 
+//At the end, show the student’s total score and a message based on how well they did
+
 //TechBrain101 Welcome Screen
 function centerText(text, width = 50) { 
     const spaces = Math.max(0, Math.floor((width - text.length) / 2)); 
@@ -136,6 +139,8 @@ rl.question("Enter your name: ", function(name) {
 
     //Calling the askQuestion function to start the quiz
     function askQuestion(index) {
+
+        
         if (index >= questions.length) {
              console.log("");
              console.log("Quiz completed!");
